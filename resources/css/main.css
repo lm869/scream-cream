@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-deserve{
+  background-image: url('/img/bg-deserve.png');
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e6b1a4;
+}
+
+.square{
+  width: 300px;
+  height: 300px;
+}
+
+strong{
+  font-weight: bold;
+}
+
+.quote {
+  background-image: url('/img/quote.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.invert {
+  transform: rotateX(-180deg);
+  transform: rotateZ(-180deg);
+  bottom: 0;
+  top: inherit;
+  bottom: -10px;
+  left: inherit;
+  margin-left: -20px;
+}
+
+.enroll{
+  top: 66px;
+  right: 10px;
+}
