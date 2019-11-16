@@ -6,12 +6,12 @@
             Occaecat officia proident elit commodo deserunt consectetur culpa duis cillum dolore incididunt voluptate et. Deserunt dolor consequat occaecat id esse eu est officia esse est.
             <span class="quote invert"></span>
           </p>
-      <h4 class="tw-text-white tw-my-4 tw-py-2">Adele, Patient </h4>
-      <div class="stars tw-border-t tw-border-b tw-py-2">
+      <h4 class="tw-text-white tw-my-4 tw-py-2 tw-italic tw-font-normal">Adele, Patient </h4>
+      <div class="stars tw-w-2/3 tw-m-auto tw-border-t tw-border-b tw-py-2">
         <vue-stars
           name="demo"
           :active-color="'#ffffff'"
-          :inactive-color="'#999999'"
+          :inactive-color="'#d99e88'"
           :shadow-color="'#d99e88'"
           :hover-color="'#dddd00'"
           :max="stars.max"

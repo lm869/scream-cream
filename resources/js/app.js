@@ -111,11 +111,16 @@ Array.from(document.querySelectorAll('.js-scroll-into-view')).forEach(node => {
 });
 
 // Basic layout nav toggle
-const navToggle = document.querySelector('.js-nav-toggle');
-const navContainer = document.querySelector('.js-nav-container');
+const navToggle = document.querySelector('.button-menu');
+const menu = document.querySelector('.menu');
+const navContainer = document.querySelector('.nav-container');
+
+console.log(navToggle)
 
 if (navToggle && navContainer) {
   navToggle.addEventListener('click', e => {
-    navContainer.classList.toggle('js-nav-open');
+    menu.classList.toggle('tw-hidden');
+    menu.classList.toggle('tw-opacity-0');
+    navContainer.classList.toggle('tw-flex');
   });
 }

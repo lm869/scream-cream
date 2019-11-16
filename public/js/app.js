@@ -1930,7 +1930,22 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       swiperOption: {
-        slidesPerView: 3,
+        slidesPerView: 4,
+        breakpoints: {
+          // when window width is >= 320px
+          1600: {
+            slidesPerView: 3,
+            spaceBetween: 40
+          },
+          1100: {
+            slidesPerView: 2,
+            spaceBetween: 40
+          },
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 40
+          }
+        },
         spaceBetween: 30,
         navigation: {
           nextEl: '.swiper-button-next',
@@ -11891,19 +11906,27 @@ var render = function() {
       _c("div", [
         _vm._m(0),
         _vm._v(" "),
-        _c("h4", { staticClass: "tw-text-white tw-my-4 tw-py-2" }, [
-          _vm._v("Adele, Patient ")
-        ]),
+        _c(
+          "h4",
+          {
+            staticClass:
+              "tw-text-white tw-my-4 tw-py-2 tw-italic tw-font-normal"
+          },
+          [_vm._v("Adele, Patient ")]
+        ),
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "stars tw-border-t tw-border-b tw-py-2" },
+          {
+            staticClass:
+              "stars tw-w-2/3 tw-m-auto tw-border-t tw-border-b tw-py-2"
+          },
           [
             _c("vue-stars", {
               attrs: {
                 name: "demo",
                 "active-color": "#ffffff",
-                "inactive-color": "#999999",
+                "inactive-color": "#d99e88",
                 "shadow-color": "#d99e88",
                 "hover-color": "#dddd00",
                 max: _vm.stars.max,
@@ -26225,12 +26248,16 @@ Array.from(document.querySelectorAll('.js-scroll-into-view')).forEach(function (
   });
 }); // Basic layout nav toggle
 
-var navToggle = document.querySelector('.js-nav-toggle');
-var navContainer = document.querySelector('.js-nav-container');
+var navToggle = document.querySelector('.button-menu');
+var menu = document.querySelector('.menu');
+var navContainer = document.querySelector('.nav-container');
+console.log(navToggle);
 
 if (navToggle && navContainer) {
   navToggle.addEventListener('click', function (e) {
-    navContainer.classList.toggle('js-nav-open');
+    menu.classList.toggle('tw-hidden');
+    menu.classList.toggle('tw-opacity-0');
+    navContainer.classList.toggle('tw-flex');
   });
 }
 
@@ -26381,8 +26408,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/leonardomoreno/workspace/nu-image/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/leonardomoreno/workspace/nu-image/resources/css/main.css */"./resources/css/main.css");
+__webpack_require__(/*! /home/leonardo/workspace/scream-cream/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/leonardo/workspace/scream-cream/resources/css/main.css */"./resources/css/main.css");
 
 
 /***/ })

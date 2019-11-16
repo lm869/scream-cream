@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="tw-font-heading">
+    <div class="tw-font-heading tw-text-black">
         {{-- <div class="tw-hidden xl:tw-block"> --}}
             @include('pages.ed.desktop')
         {{-- </div> --}}

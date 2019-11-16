@@ -7,11 +7,11 @@ module.exports = {
     colors: {
       transparent: 'transparent',
 
-      black: '#22292f',
+      black: '#323b4b',
       'grey-darkest': '#333c4a',
       'grey-darker': '#606f7b',
       'grey-dark': '#8795a1',
-      grey: '#b8c2cc',
+      'grey': '#515965',
       'grey-light': '#dae1e7',
       'grey-lighter': '#f1f5f8',
       'grey-lightest': '#f8fafc',
