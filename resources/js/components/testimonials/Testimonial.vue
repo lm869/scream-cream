@@ -1,5 +1,5 @@
 <template>
-  <div class="tw-flex tw-border tw-p-6 tw-bg-pink tw-font-light tw-text-center tw-text-xl">
+  <div class="tw-flex tw-border tw-p-6 tw-font-light tw-text-center tw-text-xl" :class="background">
     <div>
           <p class="tw-z-1 tw-relative">
             <span class="quote"></span>
@@ -12,7 +12,7 @@
           name="demo"
           :active-color="'#ffffff'"
           :inactive-color="'#d99e88'"
-          :shadow-color="'#d99e88'"
+          :shadow-color= background
           :hover-color="'#dddd00'"
           :max="stars.max"
           :value="stars.value"
@@ -26,6 +26,7 @@
 <script>
 import { VueStars } from "vue-stars"
 export default {
+  props: ['background'],
   components: {
     VueStars
   },

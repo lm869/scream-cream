@@ -9,9 +9,9 @@ module.exports = {
 
       black: '#323b4b',
       'grey-darkest': '#333c4a',
-      'grey-darker': '#606f7b',
+      'grey-darker': '#979797',
       'grey-dark': '#8795a1',
-      'grey': '#515965',
+      'grey': '#d3d2ce',
       'grey-light': '#dae1e7',
       'grey-lighter': '#f1f5f8',
       'grey-lightest': '#f8fafc',
@@ -61,7 +61,7 @@ module.exports = {
       'pink-lightest': '#f2dede',
 
       'yellow-dark': '#ddb91f',
-      'yellow': '#f6cf2c',
+      'yellow': '#f2bd31',
     },
 
     screens: {

@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('pages.index');
+});
+Route::get('/hcg', function () {
+    return view('pages.hcg');
 });

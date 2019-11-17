@@ -65,6 +65,7 @@ import 'swiper/dist/css/swiper.css'
 
 if (window.VUE_ENABLED !== false) {
   new Vue({
+    el: '#app',
     components: {
       Testimonials
     //   BlackFridayCouponRevealer,
@@ -92,7 +93,7 @@ if (window.VUE_ENABLED !== false) {
     //   TeamSection,
     //   WspNewsletterSignupButton,
     },
-  }).$mount('#app');
+  })
 }
 
 // window.axios.defaults.headers.common['X-CSRF-TOKEN'] = window.Laravel.csrfToken;

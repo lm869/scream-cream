@@ -1867,6 +1867,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['background'],
   components: {
     VueStars: vue_stars__WEBPACK_IMPORTED_MODULE_0__["VueStars"]
   },
@@ -1927,6 +1928,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['background'],
   data: function data() {
     return {
       swiperOption: {
@@ -11900,7 +11902,8 @@ var render = function() {
     "div",
     {
       staticClass:
-        "tw-flex tw-border tw-p-6 tw-bg-pink tw-font-light tw-text-center tw-text-xl"
+        "tw-flex tw-border tw-p-6 tw-font-light tw-text-center tw-text-xl",
+      class: _vm.background
     },
     [
       _c("div", [
@@ -11927,7 +11930,7 @@ var render = function() {
                 name: "demo",
                 "active-color": "#ffffff",
                 "inactive-color": "#d99e88",
-                "shadow-color": "#d99e88",
+                "shadow-color": _vm.background,
                 "hover-color": "#dddd00",
                 max: _vm.stars.max,
                 value: _vm.stars.value,
@@ -11985,15 +11988,35 @@ var render = function() {
         "swiper",
         { staticClass: "mb-16", attrs: { options: _vm.swiperOption } },
         [
-          _c("swiper-slide", [_c("testimonial")], 1),
+          _c(
+            "swiper-slide",
+            [_c("testimonial", { attrs: { background: _vm.background } })],
+            1
+          ),
           _vm._v(" "),
-          _c("swiper-slide", [_c("testimonial")], 1),
+          _c(
+            "swiper-slide",
+            [_c("testimonial", { attrs: { background: _vm.background } })],
+            1
+          ),
           _vm._v(" "),
-          _c("swiper-slide", [_c("testimonial")], 1),
+          _c(
+            "swiper-slide",
+            [_c("testimonial", { attrs: { background: _vm.background } })],
+            1
+          ),
           _vm._v(" "),
-          _c("swiper-slide", [_c("testimonial")], 1),
+          _c(
+            "swiper-slide",
+            [_c("testimonial", { attrs: { background: _vm.background } })],
+            1
+          ),
           _vm._v(" "),
-          _c("swiper-slide", [_c("testimonial")], 1)
+          _c(
+            "swiper-slide",
+            [_c("testimonial", { attrs: { background: _vm.background } })],
+            1
+          )
         ],
         1
       ),
@@ -26205,6 +26228,7 @@ vue__WEBPACK_IMPORTED_MODULE_2___default.a.use(portal_vue__WEBPACK_IMPORTED_MODU
 
 if (window.VUE_ENABLED !== false) {
   new vue__WEBPACK_IMPORTED_MODULE_2___default.a({
+    el: '#app',
     components: {
       Testimonials: _components_testimonials_Testimonials__WEBPACK_IMPORTED_MODULE_3__["default"] //   BlackFridayCouponRevealer,
       //   ChatConversation,
@@ -26232,7 +26256,7 @@ if (window.VUE_ENABLED !== false) {
       //   WspNewsletterSignupButton,
 
     }
-  }).$mount('#app');
+  });
 } // window.axios.defaults.headers.common['X-CSRF-TOKEN'] = window.Laravel.csrfToken;
 // window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -26408,8 +26432,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/leonardo/workspace/scream-cream/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/leonardo/workspace/scream-cream/resources/css/main.css */"./resources/css/main.css");
+__webpack_require__(/*! /Users/leonardomoreno/workspace/nu-image/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/leonardomoreno/workspace/nu-image/resources/css/main.css */"./resources/css/main.css");
 
 
 /***/ })

@@ -134,11 +134,40 @@ nav ul .submenu:hover > ul {
 }
 
 
-.swiper-button-next{
-  background-image: url('/img/arrow.png') !important;
+.pink .swiper-button-next{
+  background-image: url('/img/arrow-pink.png') !important;
 }
 
-.swiper-button-prev{
-  background-image: url('/img/arrow.png') !important;
+.pink .swiper-button-prev{
+  background-image: url('/img/arrow-pink.png') !important;
   transform: rotateZ(180deg);
+}
+
+.yellow .swiper-button-next{
+  background-image: url('/img/arrow-yellow.png') !important;
+}
+
+.yellow .swiper-button-prev{
+  background-image: url('/img/arrow-yellow.png') !important;
+  transform: rotateZ(180deg);
+}
+
+.disc-yellow li::before {
+  content: "";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  background: #f2bd31; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  margin-right: 0.8em; /* Also needed for space (tweak if needed) */
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.start-program-button {
+  width: 250px;
+  text-align: center;
+}
+
+.btn-hcg-shadow{
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
 }

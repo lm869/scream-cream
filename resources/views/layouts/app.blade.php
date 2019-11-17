@@ -10,9 +10,11 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="tw-w-full tw-max-w-screen-xl tw-mx-auto" id="app">
+    <div class="tw-w-full tw-max-w-screen-xl tw-mx-auto tw-font-heading tw-text-black" id="app">
+      @include('layouts.header')
       @yield('content')
+      @include('layouts.footer')
     </div>    
-    <script src="{{ asset('js/app.js')}}"></script>
+    <script type="text/javascript" src="{{ mix('/js/app.js')}}" async defer></script>
 </body>
 </html>

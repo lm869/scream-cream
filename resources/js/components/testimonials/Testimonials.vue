@@ -2,19 +2,19 @@
   <div class="mt-10 mx-16">
     <swiper :options="swiperOption" class="mb-16" >
         <swiper-slide>
-          <testimonial />
+          <testimonial :background="background"/>
         </swiper-slide>
         <swiper-slide>
-          <testimonial />
+          <testimonial :background="background"/>
         </swiper-slide>
         <swiper-slide>
-          <testimonial />
+          <testimonial :background="background"/>
         </swiper-slide>
         <swiper-slide>
-          <testimonial />
+          <testimonial :background="background"/>
         </swiper-slide>
         <swiper-slide>
-          <testimonial />
+          <testimonial :background="background"/>
         </swiper-slide>
       </swiper>
       <div class="swiper-button-prev" slot="button-prev"></div>
@@ -26,6 +26,7 @@
 import Testimonial from './Testimonial'
 import { swiper, swiperSlide } from 'vue-awesome-swiper'
 export default {
+  props: ['background'],
   data () {
     return {
       swiperOption: {
